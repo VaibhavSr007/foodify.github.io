@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            font-family: 'Quintessential', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url(img/BG.jpg);
+            background-repeat: no-repeat;
+            background-size: 1450px 750px;
+            height: 1700px;
+            background-color: rgb(193, 154, 107);
+            /* width: 5650px; */
+        }
+
+        .left {
+            /* border: 4px solid blue; */
+            float: left;
+            position: absolute;
+            /* top: 0px; */
+            /* left: 0px */
+            position: fixed;
+            top: 12px;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 12px;
+            font-size: 21px;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+            color: beige;
+        }
+
+        .mid {
+            /* border: 4px solid yellow; */
+            width: 33%;
+            margin: auto;
+            color: rgb(255, 255, 255);
+            /* font-size: 22px; */
+            /* padding: 12px; */
+            text-align: center;
+            /* padding-top: 15px; */
+            position: fixed;
+            top: 12px;
+            left: 465px;
+        }
+
+        .mid img {
+            width: 145px;
+        }
+
+        .right {
+            /* border: 4px solid tomato; */
+            float: right;
+            position: absolute;
+            top: 260px;
+            left: 650px;
+            color: rgb(255, 255, 255);
+            font-size: 22px;
+            /* padding: 12px; */
+            padding-top: 15px;
+
+        }
+
+        .right input {
+            color: rgb(26, 12, 2);
+            border-radius: 12px;
+            border-color: 4px solid rgb(97, 60, 35);
+            text-align: center;
+            font-family: 'Quintessential', cursive;
+        }
+
+        .right input:hover,
+        .right input :active {
+            background-color: beige;
+            cursor: pointer;
+        }
+
+        #ip1 {
+            width: 252px;
+            height: 30px;
+        }
+
+        #ip2 {
+            position: absolute;
+            right: 262px;
+            top: 17px;
+            width: 170px;
+            height: 28px;
+            text-align: left;
+            border-radius: 7px;
+
+        }
+
+        .menu {
+            display: inline-block;
+            margin: 52px;
+            padding: 0px;
+            position: relative;
+            top: 750px;
+            border: 4px solid rgba(61, 19, 6, 0.966);
+            border-radius: 13px;
+        }
+
+        #course1 {
+            width: 422px;
+            height: 250px;
+            /* padding-top: 120px; */
+            /* padding-bottom: 122px; */
+        }
+
+        #course2 {
+            width: 422px;
+            height: 250px;
+            float: right;
+            /* padding-top: 120px; */
+            /* padding-bottom: 122px; */
+        }
+
+        #course3 {
+            width: 422px;
+            height: 250px;
+            position: relative;
+            top: 852px;
+        }
+
+        #course4 {
+            width: 422px;
+            height: 250px;
+            float: right;
+            top: 852px;
+        }
+
+        .set {
+            /* border: 2px solid red; */
+            display: inline-block;
+            text-align: center;
+        }
+
+        .set:hover {
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #set1 {
+            position: absolute;
+            top: 1075px;
+            left: 90px;
+            width: 352px;
+        }
+
+        #set2 {
+            position: absolute;
+            top: 1075px;
+            right: 90px;
+            width: 352px;
+        }
+
+        #set3 {
+            position: absolute;
+            top: 1535px;
+            left: 90px;
+            width: 352px;
+        }
+
+        #set4 {
+            position: absolute;
+            top: 1535px;
+            right: 90px;
+            width: 352px;
+        }
+
+        /* here it begains */
+
+        .container {
+            width: 448px;
+            height: 320px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 75%;
+            left: 50%;
+            overflow: hidden;
+            border: 2px solid #663412;
+            border-radius: 8px;
+            box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            animation: slide 10s infinite;
+        }
+
+        .ig {
+            width: 100%;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(0);
+            }
+
+            30% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(-100%);
+            }
+
+            55% {
+                transform: translateX(-200%);
+            }
+
+            75% {
+                transform: translateX(-200%);
+            }
+
+            80% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(-300%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Menu</a></li>
+                <li> <a href="#"> Gallery</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="mid">
+            <img src="img/foodify.png" alt="">
+
+        </div>
+
+        <div class="right">
+            <input id="ip1" type="text" placeholder="search your delight here..">
+            <input id="ip2" type="text" placeholder="Your city">
+        </div>
+
+        <div class="main">
+            <img class="menu" id="course1" src="img/comb1.jpg" alt="">
+            <img class="menu" id="course2" src="img/chin.jpg" alt="">
+            <img class="menu" id="course3" src="img/punj.jpg" alt="">
+            <img class="menu" id="course4" src="img/south.jpg" alt="">
+        </div>
+
+        <footer class="des">
+            <div class="set" id="set1">
+                <h3>Gotchuu!! upto 50% OFF on Combos</h3>
+                <p>Best Combos for Weird time cravings ;) </p>
+            </div>
+            <div class="set" id="set2">
+                <h3>It isn't from WUHAN!! grab the best offers*</h3>
+                <p>Mouth Watering Chinese is Just a click away</p>
+            </div>
+            <div class="set" id="set3">
+                <h3>SORRY!! You can never miss a Punjabi Delight</h3>
+                <p>Order now to avial OFF upto 40% on Punjabi Special</p>
+            </div>
+            <div class="set" id="set4">
+                <h3>Never been to south? Don't worry we will take your Taste Buds there :)</h3>
+                <p>Order for 300 and above to get free Pysum (Desert)</p>
+            </div>
+        </footer>
+    </header>
+
+    <div class="container">
+        <div class="wrapper">
+            <img class="ig" src="img/2.jpg">
+            <img class="ig" src="img/3.jpg">
+            <img class="ig" src="img/4.jpg">
+            <img class="ig" src="img/5.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
